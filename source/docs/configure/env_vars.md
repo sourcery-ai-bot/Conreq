@@ -20,7 +20,7 @@ LOG_LEVEL = "ERROR"                       # default: WARNING
 CONREQ_ENV_PREFIX = "CONREQ"              # default: None (Prefix for all these environment variables)
 
 # Data Storage
-DATA_DIR = "/example/directory"           # default: /config (Defaults to "data/" outside of docker)
+DATA_DIR = "/example/directory"           # default: /config (Defaults to "data" outside of docker)
 DB_ENGINE = "MYSQL"                       # default: SQLITE3
 MYSQL_CONFIG_FILE = "/config/mysql.cnf"   # default: None
 
