@@ -36,24 +36,3 @@ Follow all instructions laid out within [Creating a Development Environment](#cr
 2. The webserver is conifgured with good defaults for most cases. But if you want to configure the webserver see our [webserver documentation](/Conreq/configure/webserver/) for more information.
 3. Type `python manage.py run_conreq` to run the webserver.
 
----
-
-## Optional: Visual Studio Code Configuration
-
-### VS Code Extensions
-
--   GitHub
--   GitLens
--   Python
--   MagicPython
-
-### VS Code Settings
-
-1. If your terminal does not show `(venv) ...`, type `./venv/Scripts/activate`.
-2. Type `pip install -r requirements_dev.txt` to install VS Code editor packages within the virtual environment.
-3. Enable Python Formatting
-    - Settings -> Editor: Format On Save -> `ON`
-    - Settings -> Python Formatting Provider -> `Black`
-4. Enabling Python Linting
-    - Ctrl+Shift+P -> Python: Select Linter -> `pylint`
-    - Settings -> Linting: Pylint Args -> Add Item -> `--disable=line-too-long,bare-except,bad-continuation`
