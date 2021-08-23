@@ -4,9 +4,8 @@ If you intend to edit Conreq's code, then proceed with the Development instructi
 
 ---
 
-## Creating a Development Environment
 
-### Software Required
+## Software Required
 
 -   Install [Python 3.9+](https://www.python.org/downloads/)
     -   Make sure to select "Add Python 3.x to PATH" during installation.
@@ -14,7 +13,8 @@ If you intend to edit Conreq's code, then proceed with the Development instructi
 -   _If using Windows_: Install [Visual Studio C++](https://visualstudio.microsoft.com/visual-cpp-build-tools/) (Within this installer, navigate to _C++ Build Tools_. Select _MSVC_ and _Windows 10 SDK_)
 -   _Optional_: Install [Visual Studio Code](https://code.visualstudio.com/) (Any editor would work)
 
-### Setting Up the Environment
+
+## Creating a Development Environment
 
 1. Pull the repository from GitHub.
 2. Open a terminal (ex. Command Prompt or PowerShell) as administrator at the root of the repository.

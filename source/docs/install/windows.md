@@ -4,7 +4,7 @@ A traditional Windows installer is targeted for development within our roadmap, 
 
 ---
 
-### Software Required
+## Software Required
 
 -   Install [Python 3.9+](https://www.python.org/downloads/)
     -   Make sure to select "Add Python 3.x to PATH" during installation.
@@ -13,7 +13,7 @@ A traditional Windows installer is targeted for development within our roadmap, 
 -   Install [Visual Studio C++](https://visualstudio.microsoft.com/visual-cpp-build-tools/) (Within this installer, navigate to _C++ Build Tools_. Select _MSVC_ and _Windows 10 SDK_)
 -   Download [NSSM](https://nssm.cc/download)
 
-### Installation
+## Installation
 
 1. Create the folder `C:\Program Files\Conreq`
 2. Use this folder to follow steps [setting up a Conreq environment](/Conreq/develop/run_conreq/#creating-a-production-environment), excluding steps involving `python manage.py run_conreq`.
