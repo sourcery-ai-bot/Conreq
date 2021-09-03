@@ -1,12 +1,28 @@
 Environment variables can be used to customize core Conreq features at boot.
 
-If running outside of docker, the method of setting environment variables will [vary based on operating system](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html).
+## Environment Variables File
 
-For Unraid Docker installations, this will be done by clicking `Add another Path, Port, Variable, Label, or Device` through a docker's `Edit` menu, and then selecting a `Config Type` of `Variable`.
+Editing Conreq's `settings.env` file is the recommended way of adding environment variables.
 
-For regular docker installations, you can use the `-e` parameter, such as `docker run -e 'DB_ENGINE'='MYSQL' -e 'MYSQL_CONFIG_FILE'='/config/mysql.cnf`.
+Here are some common locations of this file.
 
-If using Docker Compose, see the [relevant documentation](https://docs.docker.com/compose/environment-variables/#set-environment-variables-in-containers).
+| Operating System                   | Location                             |
+| ---------------------------------- | ------------------------------------ |
+| Manually Run (Windows/Linux/MacOS) | `<CONREQ_DIR>/data/settings.env`     |
+| Unraid Docker                      | `<APP_DATA_DIR>/conreq/settings.env` |
+| Docker                             | `/config/settings.env`               |
+
+## System Variables
+
+Variables can alternatively be set through the system's evironment variables.
+
+_Note: These variables take priority over those stored in `settings.env`._
+
+| Operating System                   | Location                                                                                                                                    |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Manually Run (Windows/Linux/MacOS) | [Varies depending on operating system.](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html)                          |
+| Unraid Docker                      | Through a docker's `Edit` menu, click `Add another Path, Port, Variable, Label, or Device`, and then under `Config Type` select `Variable`. |
+| Docker                             | [Add as a `-e` parameter.](https://docs.docker.com/compose/environment-variables/#set-environment-variables-in-containers)                  |
 
 ## Available Variables
 
