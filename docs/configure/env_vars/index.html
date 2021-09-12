@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#available-variables" class="md-skip">
+        <a href="#environment-variables-file" class="md-skip">
           Skip to content
         </a>
       
@@ -423,6 +423,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#environment-variables-file" class="md-nav__link">
+    Environment Variables File
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-variables" class="md-nav__link">
+    System Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#available-variables" class="md-nav__link">
     Available Variables
   </a>
@@ -631,10 +645,56 @@
                   <h1>Environment Variables</h1>
                 
                 <p>Environment variables can be used to customize core Conreq features at boot.</p>
-<p>If running outside of docker, the method of setting environment variables will <a href="https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html">vary based on operating system</a>.</p>
-<p>For Unraid Docker installations, this will be done by clicking <code>Add another Path, Port, Variable, Label, or Device</code> through a docker's <code>Edit</code> menu, and then selecting a <code>Config Type</code> of <code>Variable</code>.</p>
-<p>For regular docker installations, you can use the <code>-e</code> parameter, such as <code>docker run -e 'DB_ENGINE'='MYSQL' -e 'MYSQL_CONFIG_FILE'='/config/mysql.cnf</code>.</p>
-<p>If using Docker Compose, see the <a href="https://docs.docker.com/compose/environment-variables/#set-environment-variables-in-containers">relevant documentation</a>.</p>
+<h2 id="environment-variables-file">Environment Variables File<a class="headerlink" href="#environment-variables-file" title="Permanent link">&para;</a></h2>
+<p>Editing Conreq's <code>settings.env</code> file is the recommended way of adding environment variables.</p>
+<p>Here are some common locations of this file.</p>
+<table>
+<thead>
+<tr>
+<th>Operating System</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manually Run (Windows/Linux/MacOS)</td>
+<td><code>&lt;CONREQ_DIR&gt;/data/settings.env</code></td>
+</tr>
+<tr>
+<td>Unraid Docker</td>
+<td><code>&lt;APP_DATA_DIR&gt;/conreq/settings.env</code></td>
+</tr>
+<tr>
+<td>Docker</td>
+<td><code>/config/settings.env</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="system-variables">System Variables<a class="headerlink" href="#system-variables" title="Permanent link">&para;</a></h2>
+<p>Variables can alternatively be set through the system's evironment variables.</p>
+<p><em>Note: These variables take priority over those stored in <code>settings.env</code>.</em></p>
+<table>
+<thead>
+<tr>
+<th>Operating System</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manually Run (Windows/Linux/MacOS)</td>
+<td><a href="https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html">Varies depending on operating system.</a></td>
+</tr>
+<tr>
+<td>Unraid Docker</td>
+<td>Through a docker's <code>Edit</code> menu, click <code>Add another Path, Port, Variable, Label, or Device</code>, and then under <code>Config Type</code> select <code>Variable</code>.</td>
+</tr>
+<tr>
+<td>Docker</td>
+<td><a href="https://docs.docker.com/compose/environment-variables/#set-environment-variables-in-containers">Add as a <code>-e</code> parameter.</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="available-variables">Available Variables<a class="headerlink" href="#available-variables" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># General Settings</span>
 <span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&quot;requests&quot;</span>                     <span class="c1"># default: None</span>
@@ -671,7 +731,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 19, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 3, 2021</span>
       
     
   </small>

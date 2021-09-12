@@ -10,7 +10,7 @@
 
     _If you need help with this, join the [Organizr Discord](https://discord.com/invite/TrNtY7N) and post in #groups._
 
-4. In your Conreq block, add the following...
+4. In your Conreq block within Nginx, add the following...
 
     ```nginx
     # Sets Conreq to be accessible by all Organizr users. Google "Organizr ServerAuth" for more details.
