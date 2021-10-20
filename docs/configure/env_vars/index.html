@@ -696,33 +696,33 @@
 </tbody>
 </table>
 <h2 id="available-variables">Available Variables<a class="headerlink" href="#available-variables" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code># General Settings
-TZ = America/Los_Angeles                # default: UTC (Timezone for log files, in &quot;TZ Database&quot; format)
-BASE_URL = requests                     # default: None
-APP_NAME = RequestCentral               # default: Conreq
-APP_DESCRIPTION = Get yo stuff!         # default: Content Requesting
-ARR_REFRESH_INTERNAL = */15             # default: */1 (Cron minutes for Sonarr/Radarr library refresh)
-LOG_LEVEL = ERROR                       # default: WARNING
-CONREQ_ENV_PREFIX = CONREQ              # default: None
+<div class="highlight"><pre><span></span><code><span class="c1"># General Settings</span>
+<span class="nv">TZ</span> <span class="o">=</span> America/Los_Angeles                <span class="c1"># default: UTC (Timezone for log files, in &quot;TZ Database&quot; format)</span>
+<span class="nv">BASE_URL</span> <span class="o">=</span> requests                     <span class="c1"># default: None</span>
+<span class="nv">APP_NAME</span> <span class="o">=</span> RequestCentral               <span class="c1"># default: Conreq</span>
+<span class="nv">APP_DESCRIPTION</span> <span class="o">=</span> Get yo stuff!         <span class="c1"># default: Content Requesting</span>
+<span class="nv">ARR_REFRESH_INTERNAL</span> <span class="o">=</span> */15             <span class="c1"># default: */1 (Cron minutes for Sonarr/Radarr library refresh)</span>
+<span class="nv">LOG_LEVEL</span> <span class="o">=</span> ERROR                       <span class="c1"># default: WARNING</span>
+<span class="nv">CONREQ_ENV_PREFIX</span> <span class="o">=</span> CONREQ              <span class="c1"># default: None</span>
 
-# Data Storage
-DATA_DIR = /example/directory           # default: /config (Defaults to &quot;data&quot; outside of docker)
-DB_ENGINE = MYSQL                       # default: SQLITE3
-MYSQL_CONFIG_FILE = /config/mysql.cnf   # default: None
+<span class="c1"># Data Storage</span>
+<span class="nv">DATA_DIR</span> <span class="o">=</span> /example/directory           <span class="c1"># default: /config (Defaults to &quot;data&quot; outside of docker)</span>
+<span class="nv">DB_ENGINE</span> <span class="o">=</span> MYSQL                       <span class="c1"># default: SQLITE3</span>
+<span class="nv">MYSQL_CONFIG_FILE</span> <span class="o">=</span> /config/mysql.cnf   <span class="c1"># default: None</span>
 
-# Security
-SSL_SECURITY = True                     # default: False (True enables advanced SSL security features)
-PWNED_VALIDATOR = False                 # default: True (False disables checking for compromised passwords)
-X_FRAME_OPTIONS = SAMEORIGIN            # default: DENY (False disables X-Frame-Options)
-ALLOWED_HOST = 192.168.0.199            # default: * (Allows all hosts)
-DEBUG = False                           # default: False (Disable security features, only enable this during development. Defaults to True outside of docker.)
+<span class="c1"># Security</span>
+<span class="nv">SSL_SECURITY</span> <span class="o">=</span> True                     <span class="c1"># default: False (True enables advanced SSL security features)</span>
+<span class="nv">PWNED_VALIDATOR</span> <span class="o">=</span> False                 <span class="c1"># default: True (False disables checking for compromised passwords)</span>
+<span class="nv">X_FRAME_OPTIONS</span> <span class="o">=</span> SAMEORIGIN            <span class="c1"># default: DENY (False disables X-Frame-Options)</span>
+<span class="nv">ALLOWED_HOST</span> <span class="o">=</span> <span class="m">192</span>.168.0.199            <span class="c1"># default: * (Allows all hosts)</span>
+<span class="nv">DEBUG</span> <span class="o">=</span> False                           <span class="c1"># default: False (Disable security features, only enable this during development. Defaults to True outside of docker.)</span>
 
-# Email
-EMAIL_USE_TLS = False                   # default: True
-EMAIL_PORT = 587                        # default: None
-EMAIL_HOST = smtp.gmail.com             # default: None
-EMAIL_HOST_USER = myself@gmail.com      # default: None
-EMAIL_HOST_PASSWORD = dogmemes123       # default: None
+<span class="c1"># Email</span>
+<span class="nv">EMAIL_USE_TLS</span> <span class="o">=</span> False                   <span class="c1"># default: True</span>
+<span class="nv">EMAIL_PORT</span> <span class="o">=</span> <span class="m">587</span>                        <span class="c1"># default: None</span>
+<span class="nv">EMAIL_HOST</span> <span class="o">=</span> smtp.gmail.com             <span class="c1"># default: None</span>
+<span class="nv">EMAIL_HOST_USER</span> <span class="o">=</span> myself@gmail.com      <span class="c1"># default: None</span>
+<span class="nv">EMAIL_HOST_PASSWORD</span> <span class="o">=</span> dogmemes123       <span class="c1"># default: None</span>
 </code></pre></div>
                 
                   
@@ -732,7 +732,7 @@ EMAIL_HOST_PASSWORD = dogmemes123       # default: None
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 3, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2021</span>
       
     
   </small>

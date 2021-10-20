@@ -26,7 +26,7 @@ _Note: These variables take priority over those stored in `settings.env`._
 
 ## Available Variables
 
-```conf
+```bash
 # General Settings
 TZ = America/Los_Angeles                # default: UTC (Timezone for log files, in "TZ Database" format)
 BASE_URL = requests                     # default: None
